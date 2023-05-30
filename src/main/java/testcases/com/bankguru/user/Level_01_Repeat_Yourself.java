@@ -41,8 +41,7 @@ public class Level_01_Repeat_Yourself {
         driver.findElement(By.xpath("//input[@name='btnLogin']")).click();
 
         // Get User ID / Password information
-        userID = driver.findElement(By.xpath("//td[normalize-space()='User ID :']/following-sibling::td")).getText();
-        password = driver.findElement(By.xpath("//td[normalize-space()='Password :']/following-sibling::td")).getText();
+        userID = driver.findElement(By.xpath("//td[normalize--space()='Password :']/following-sibling::td")).getText();
     }
 
     @Test
